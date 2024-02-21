@@ -4,6 +4,8 @@ A brief description of your React app.
 
 ![App Screenshot](public/task_management.png)
 
+[Deployed_Website](https://task-management-app1.netlify.app/)
+
 ### Description
 - user can 
   - add task 
