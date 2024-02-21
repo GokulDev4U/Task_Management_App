@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./css/App.css";
 import InputField from "./components/InputField";
 import TodoList from "./components/TodoList";
@@ -41,7 +41,7 @@ const App = () => {
     }
   };
 
-  const onDragEnd = (result) => {
+  const onDragEnd = useCallback((result) => {
     console.log(result)
     const { destination, source } = result
 
@@ -90,7 +90,8 @@ const App = () => {
       StartedTodos: started,
       CompletedTodos: complete,
     }));
-  };
+  }, [setAllTodos, todos, StartedTodos, CompletedTodos]);
+  
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>

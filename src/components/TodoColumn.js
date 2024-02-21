@@ -11,7 +11,7 @@ const TodoColumn = ({ droppableId, todos, setTodos }) => {
           ref={provided.innerRef}
           {...provided.droppableProps}
         >
-          <span className="todos__heading">{droppableId.slice(4)} Tasks</span>
+          <span className="todos__heading">{droppableId?.slice(4)} Tasks</span>
           {todos?.map((todo, index) => (
             <SingleTodo
               index={index}
