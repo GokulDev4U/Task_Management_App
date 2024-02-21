@@ -2,7 +2,7 @@
 
 A brief description of your React app.
 
-![App Screenshot](./public/task_management.jpg)
+![App Screenshot](/task_management.jpg)
 
 ### Installation
 
