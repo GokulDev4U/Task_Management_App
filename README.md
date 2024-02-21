@@ -9,7 +9,10 @@ A brief description of your React app.
   - add task 
   - edit task
   - delete task
-  - drag and drop the task  
+  - drag and drop the task into 3 category
+     - Added
+     - Started
+     - Completed
 - task persists using local storage
 - the task is categorized into 3 section
    - Added
