@@ -1,4 +1,8 @@
+# Your React App Name
 
+A brief description of your React app.
+
+![App Screenshot](./public/task_management.jpg)
 
 ### Installation
 
