@@ -1,6 +1,5 @@
 import React from "react";
 import TodoColumn from "./TodoColumn";
-import { Droppable } from "react-beautiful-dnd";
 
 const TodoList = ({ todos, setTodos, StartedTodos, setStartedTodos, CompletedTodos, setCompletedTodos }) => {
   return (
