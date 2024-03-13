@@ -6,6 +6,7 @@ import { DragDropContext } from "react-beautiful-dnd";
 
 const App = () => {
   const [todo, setTodo] = useState("")
+  
   const [allTodos, setAllTodos] = useState({
     todos: [],
     StartedTodos: [],
@@ -91,6 +92,8 @@ const App = () => {
       CompletedTodos: complete,
     }));
   }, [setAllTodos, todos, StartedTodos, CompletedTodos]);
+
+
   
 
   return (
@@ -98,6 +101,7 @@ const App = () => {
       <div className="App">
         <span className="heading">Task Management App</span>
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+        {/* <input type="text" onchange={handleChange} value={search}/> */}
         <TodoList
           todos={todos}
           setTodos={(newTodos) => setAllTodos((prev) => ({ ...prev, todos: newTodos }))}
